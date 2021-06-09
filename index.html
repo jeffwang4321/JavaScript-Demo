@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J & L</title>
+
+    <!-- MAIN CSS and Page Icon -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" href="./apple.png"/>
+
+    <!-- Box Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    </br>
+    </br>
+    <nav id="navheader">
+      <div id ="btnhome" onclick="chooseHome()" class="active"> <i class='bx bx-home' ></i> Home </div>
+      <div id ="btnquiz" onclick="choosePage1()"> <i class='bx bx-pencil' ></i> Quiz </div>
+      <div id ="btntime" onclick="chooseTime()"> <i class='bx bx-calendar-alt'></i> Timeline </div>
+    </nav>
+    
+
+    </br>
+    <div id="lock-page">
+      <h1>Passward: 123<i class='bx bxs-lock-alt'></i></h1>
+      <div id="content">
+        <input id="password-input" type="password" placeholder="Password">
+        <i id='eyes' class='bx bx-show' onclick="eyetoggle()"></i>
+      </div>
+      <button onclick="unlock()"><i class='bx bx-key'></i></button>
+    </div>
+
+    <div id="home">
+      <h1 id ="day"></h1>
+      </br></br>
+
+      <h3 id ="quote"></h3>
+      <h3><span id ="name"></span></h3>
+      </br></br>
+
+      <button onclick="nextQuote()"><i class='bx bx-refresh'></i></button>
+    </div>
+    
+    <div id="page1">
+      <h1>1. What date today?</h1>
+      <div id="content">
+        <input id="page1-input" placeholder="MM/DD/YYYY" autocomplete="off">
+      </div>
+      <button onclick="unlock1()"><i class='bx bx-key'></i></button>
+    </div>
+
+    <div id="page2">
+      <h1>2. Fast food restaurant with a M logo?</h1>
+      <div id="content">
+        <input id="page2-input" placeholder="Restaurant" autocomplete="off">
+      </div>
+      <button onclick="unlock2()"><i class='bx bx-key'></i></button>
+    </div>
+
+    <div id="page3">
+      <h1>3. What is 2 x 2 - 1?</h1>
+      <div id="mc-content">
+        <div><label><input type="radio" name="page3-radio" value="0"/> 1 </label></div>
+        <div><label><input type="radio" name="page3-radio" value="0"/> 2 </label></div>
+        <div><label><input type="radio" name="page3-radio" value="1"/> 3 </label></div>
+        <div><label><input type="radio" name="page3-radio" value="0"/> 4 </label></div>        
+      </div>
+      <button onclick="unlock3()"><i class='bx bx-key'></i></button>
+    </div>
+
+    <div id="page4">
+      <h1>4. Select all the right answers </h1>
+      <div id="mc-content">
+        <div><label><input type="checkbox" id="page4-check1" value="1"/> I'm right </label></div>
+        <div><label><input type="checkbox" id="page4-check2" value="0"/> The one above me is right</label></div>
+        <div><label><input type="checkbox" id="page4-check3" value="1"/> The one below me is right </label></div>
+        <div><label><input type="checkbox" id="page4-check4" value="1"/> The one above me is right</label></div>        
+      </div>
+      <button onclick="unlock4()"><i class='bx bx-key'></i></button>
+    </div>
+
+    <div id="page5">
+      <h1>5. Do you like this website? </h1>
+      <div id="content">
+        <input id="page5-input" placeholder="Yes" autocomplete="off">
+      </div>
+      <button onclick="unlock5()"><i class='bx bx-key'></i></button>
+    </div>
+
+
+    <div id="time">
+      <div id="timeline">
+
+        <div class="job">
+          <div class="date"><span style="border: 5px solid #FF9D87"></span>01/01/2020</div>
+          <div class="job_description" style="border-left: 5px solid #FF9D87"> 
+            <h1> January &nbsp;<i class='bx bxs-plus-circle' onclick="toggle1('container1', 'container2', 'container3')"></i></h1>
+
+            <div id="time-box">
+              <div class="container" id="container1">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="container" id="container2">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="container" id="container3">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date"><span style= "border: 5px solid #71c5df"></span>02/01/2020</div>
+          <div class="job_description" style="border-left: 5px solid #71C5DF;">           
+            <h1> February &nbsp;<i class='bx bxs-plus-circle' onclick="toggle1('container4', 'container5', 'container6')"></i></h1>
+
+            <div id="time-box">
+              <div class="container" id="container4">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="container" id="container5">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="container" id="container6">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div> 
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date"><span style=" border: 5px solid #84C6A2"></span>03/01/2020</div>
+          <div class="job_description" style="border-left: 5px solid #84c6a2">
+            <h1> March &nbsp;<i class='bx bxs-plus-circle' onclick="toggle1('container7', 'container8', 'container9')"></i></h1>
+
+            <div id="time-box">
+              <div class="container" id="container7">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div> 
+              
+              <div class="container" id="container8">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div> 
+
+              <div class="container" id="container9">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+
+            </div> 
+          </div>
+        </div>
+
+
+        <div class="job">
+          <div class="date"><span style="border: 5px solid #FF9D87"></span>04/01/2020</div>
+          <div class="job_description" style="border-left: 5px solid #FF9D87">
+              
+            <h1> April &nbsp;<i class='bx bxs-plus-circle' onclick="toggle1('container10', 'container11', 'container12')"></i></h1>
+            <div id="time-box">
+              <div class="container" id="container10">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="container" id="container11">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="container" id="container12">
+                <img src="http://placehold.it/720x1280">
+                <div id="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                  </p>
+                </div>
+              </div>
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="date"><span style= "border: 5px solid #71c5df"></span>05/01/2020</div>
+          <div class="job_description" style="border-left: 5px solid #71C5DF;">
+
+            <h1> May &nbsp;</h1>
+            <div class="container" id="container40">
+              <img src="http://placehold.it/720x1280">
+              <div id="overlay">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lobortis enim. Duis fermentum augue quis augue tincidunt euismod in a risus. Aenean tincidunt risus dui, nec tristique massa tempor id. Cras scelerisque bibendum finibus. Praesent porta neque in ante condimentum interdum. Aliquam fermentum, nibh eget egestas dignissim, sem dolor eleifend tellus, in efficitur lectus nibh eget dolor.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="job">
+            <div class="date"><span style="border: 5px solid  #71c5df"></span></div>
+        </div>
+
+      </div>
+    </div>
+  </br>
+
+  <!-- ======================== MAIN JS ======================== -->
+  <script type="text/javascript" src="./main.js"></script>
+
+  </body>
+</html>
+

@@ -1,0 +1,310 @@
+/* All */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color:#EBC9C8;
+}
+
+
+/* lock-page section */
+#lock-page, #page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #home{
+    margin-top: 25px;
+    padding: 25px 50px;
+    background:  white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+#page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #home, #time, nav, footer{
+    display: none;
+}
+
+
+/* Front page password */
+.bxs-lock-alt{
+    font-size: 28px;
+}
+input{
+    margin-top: 5px;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+.bx-show{   
+    color: lightgrey;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 25px;
+}
+.bx-show:hover{
+    cursor: pointer;
+}
+
+/* button section */
+button{
+    margin: 0 5px;
+    background-color: #EBC9C8;
+    border: 2px solid #EBC9C8;
+    color: white;
+    cursor: pointer;
+    outline: none; 
+    border-radius: 15px;
+    width: 80px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 28px;
+}
+button:hover{
+    background-color: white; 
+    border: 2px solid #EBC9C8;
+    color: #EBC9C8;
+}
+
+
+/* nav/ header and buttons */
+nav{
+    width: 500px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px 15px;
+    background:  white;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+#btnhome, #btnquiz, #btntime{
+    background-color: white; 
+    border: 2px solid  #EBC9C8;
+    color:  #EBC9C8;
+    padding-top: 3px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 22px;
+    width: 150px;
+    height: 38px;
+    margin: 10px;
+}
+#btnhome i, #btnquiz i, #btntime i{
+    font-size: 20px;
+    vertical-align: baseline;
+}
+#btnhome:hover, #btnquiz:hover, #btntime:hover, #navheader .active{
+    background-color: #EBC9C8; 
+    border: 2px solid  #EBC9C8;
+    color:  black;
+    cursor: pointer;
+}
+
+
+/* home page quote styling*/
+#quote{
+    margin: 15px 0 10px;
+}
+#name{
+    padding: 0 15px 0 10px;
+    font-style: italic;
+    background-color: #EBC9C8; 
+    border-radius: 15px;
+}
+
+
+/* Content Styling for Quiz MC */
+#mc-content{
+    padding: 10px 20px 0;
+    text-align: left;
+    width: 100%;
+}
+#mc-content div{
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding: 5px;
+}
+label:hover{
+    cursor: pointer;
+}
+
+
+/* ------------------------------------ Timeline  ------------------------------------------ */
+#time{
+    margin: 25px auto;
+    padding: 25px 50px;
+    background:  white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+    width: 90vw;
+    height: 99.5%;
+}
+.date{
+    position: relative;
+    float: left;
+    text-align: right;
+    width: 140px;
+    font-size: 15px;
+    left: 12.2px; 
+    line-height: 20px;
+}
+#time span{
+    position: relative;
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+.job{
+    text-align: left;
+    padding-top:50px;
+}
+.job_description{
+    float: left;
+    width: calc(100% - 140px);
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+#time-box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#time h1{
+    position: relative;
+    top: -11px;
+    color: black;
+}
+#time h3{
+    padding-bottom: 10px;
+}
+
+.bxs-plus-circle:hover{
+    cursor: pointer;
+    color: #EBC9C8;
+}
+
+/* Image overlays */
+.container{
+	position: relative;
+	width: 300px;
+    text-align: center;
+}
+#overlay{
+	position: absolute;
+	top: 0;
+	height: 99.1%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #EBC9C8;
+}
+.container:hover #overlay{
+	opacity: 1;
+}
+#overlay p{
+	color: black;
+	text-align: left;
+	padding: 60px 30px;
+}
+.container img{
+	width: 300px;
+}
+
+
+
+@media only screen and (max-width : 1265px){
+    #time-box{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (max-width : 935px){
+    .job h1{
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    .date{
+        width: 100px;
+        font-size: 9px;
+	}
+    .job_description{
+        width: calc(100% - 100px);
+    }
+    #time-box{
+		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (max-width : 570px){
+    nav{
+        width: 350px;
+        margin-top: 0px;
+        padding: 5px 10px;
+    }
+    #btnhome, #btnquiz, #btntime{
+        font-size: 0px;
+    }
+    #btnhome i, #btnquiz i, #btntime i{
+        font-size: 28px;
+    }
+    #time{
+        margin: 0px auto;
+        padding: 0px 15px;
+    }
+    .container{
+        width: 200px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .container img{
+        width: 200px; 
+    } 
+    .container video{
+        width: 200px; 
+        height: 355px;
+    }
+    #overlay p{
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+}
+@media only screen and (max-width : 405px){
+    .date{
+        width: 40px;
+        font-size: 0px;
+	}
+    .job_description{
+        width: calc(100% - 40px);
+    }
+}
+
+
+
+/* Scrollbar Effects */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
