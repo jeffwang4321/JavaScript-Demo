@@ -66,42 +66,6 @@ function chooseTime(){
   document.getElementById('container10').style.display = 'none';
   document.getElementById('container11').style.display = 'none';
   document.getElementById('container12').style.display = 'none';
-
-  document.getElementById('container13').style.display = 'none';
-  document.getElementById('container14').style.display = 'none';
-  document.getElementById('container15').style.display = 'none';
-
-  document.getElementById('container16').style.display = 'none';
-  document.getElementById('container17').style.display = 'none';
-  document.getElementById('container18').style.display = 'none';
-
-  document.getElementById('container19').style.display = 'none';
-  document.getElementById('container20').style.display = 'none';
-  document.getElementById('container21').style.display = 'none';
-
-  document.getElementById('container22').style.display = 'none';
-  document.getElementById('container23').style.display = 'none';
-  document.getElementById('container24').style.display = 'none';
-
-  document.getElementById('container25').style.display = 'none';
-  document.getElementById('container26').style.display = 'none';
-  document.getElementById('container27').style.display = 'none';
-
-  document.getElementById('container28').style.display = 'none';
-  document.getElementById('container29').style.display = 'none';
-  document.getElementById('container30').style.display = 'none';
-
-  document.getElementById('container31').style.display = 'none';
-  document.getElementById('container32').style.display = 'none';
-  document.getElementById('container33').style.display = 'none';
-
-  document.getElementById('container34').style.display = 'none';
-  document.getElementById('container35').style.display = 'none';
-  document.getElementById('container36').style.display = 'none';
-
-  document.getElementById('container37').style.display = 'none';
-  document.getElementById('container38').style.display = 'none';
-  document.getElementById('container39').style.display = 'none';
 }
 
 function unlock1(){

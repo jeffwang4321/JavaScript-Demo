@@ -16,7 +16,7 @@ body{
 
 
 /* lock-page section */
-#lock-page, #page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #home{
+#lock-page, #page1, #page2, #page3, #page4, #page5, #home{
     margin-top: 25px;
     padding: 25px 50px;
     background:  white;
@@ -24,7 +24,7 @@ body{
     border-radius: 15px;
     box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
 }
-#page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #home, #time, nav, footer{
+#page1, #page2, #page3, #page4, #page5, #home, #time, nav, footer{
     display: none;
 }
 
